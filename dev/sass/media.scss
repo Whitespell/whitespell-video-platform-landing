@@ -1,0 +1,36 @@
+@include media(720px, 880px){
+
+	.container {
+		width: 720px;
+	}
+
+	.content-wrapper {
+		width: 50%;
+	}
+	.preview-wrapper {
+		width: 50%;
+	}
+
+}
+
+@include media($max-width: 720px){
+
+	.container {
+		width: 90%;
+	}
+
+	.v-align {
+		display: block;
+		margin-top: $margin-l;
+	}
+
+	.content-wrapper {
+		width: 100%;
+	}
+	.preview-wrapper {
+		width: 100%;
+		padding-left: 0;
+		padding-top: $margin-l;
+	}
+
+}
