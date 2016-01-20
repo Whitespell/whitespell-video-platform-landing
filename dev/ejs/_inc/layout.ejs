@@ -68,9 +68,21 @@
     <%- body %>
 
     <script>
-        window.addEventListener('load', function(){
-            document.documentElement.className += ' js-page-loaded';
-        }, false);
+        document.documentElement.className += ' js-page-loaded';
+
+        (function(){
+            var triggerEl = document.getElementById('js-overlay-trigger'),
+                overlayEl = document.getElementById('overlay'),
+                overlayCloseEl = document.getElementById('js-overlay-close');
+
+            triggerEl.addEventListener('click', function(){
+                overlayEl.classList.add('overlay--visible');
+            }, false);
+
+            overlayCloseEl.addEventListener('click', function(){
+                overlayEl.classList.remove('overlay--visible');
+            }, false);
+        }());
     </script>
 
     <script>

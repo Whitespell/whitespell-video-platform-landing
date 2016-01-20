@@ -33,4 +33,19 @@
 		padding-top: $margin-l;
 	}
 
+	.overlay {
+		padding-top: $margin-xxl;
+
+		.list--inline {
+			li {
+				margin-right: 0;
+				margin-bottom: $margin-xl;
+
+				a {
+					width: 120px;
+				}
+			}
+		}
+	}
+
 }
